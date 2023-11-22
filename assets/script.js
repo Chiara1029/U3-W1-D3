@@ -32,7 +32,7 @@ var Lavoratore = /** @class */ (function (_super) {
         return this.redditoAnnuoLordo * 0.78;
     };
     Lavoratore.prototype.getTasseIrpef = function () {
-        return this.redditoAnnuoLordo * 0.5;
+        return this.redditoAnnuoLordo * 0.05;
     };
     Lavoratore.prototype.getTasseInps = function () {
         return this.redditoAnnuoLordo * 0.25;
@@ -49,7 +49,7 @@ var Professionista = /** @class */ (function (_super) {
         return _super.call(this, redditoAnnuoLordo) || this;
     }
     Professionista.prototype.getTasseIrpef = function () {
-        return this.getCodRedd() * 0.5;
+        return this.getCodRedd() * 0.05;
     };
     Professionista.prototype.getTasseInps = function () {
         return this.getCodRedd() * 0.25;

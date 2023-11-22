@@ -20,7 +20,7 @@ class Lavoratore extends Tasse{
         return this.redditoAnnuoLordo *0.78
     }
     getTasseIrpef(): number {
-        return this.redditoAnnuoLordo *0.5
+        return this.redditoAnnuoLordo *0.05
     }
     getTasseInps(): number {
         return this.redditoAnnuoLordo *0.25
@@ -36,7 +36,7 @@ class Professionista extends Lavoratore{
         super(redditoAnnuoLordo)
     }
     getTasseIrpef(): number {
-        return this.getCodRedd() *0.5
+        return this.getCodRedd() *0.05
     }
     getTasseInps(): number {
         return this.getCodRedd() *0.25
